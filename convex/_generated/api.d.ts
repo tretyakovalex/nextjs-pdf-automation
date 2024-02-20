@@ -16,6 +16,7 @@ import type {
 } from "convex/server";
 import type * as files from "../files.js";
 import type * as pdfAutomations from "../pdfAutomations.js";
+import type * as util from "../util.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -28,6 +29,7 @@ import type * as pdfAutomations from "../pdfAutomations.js";
 declare const fullApi: ApiFromModules<{
   files: typeof files;
   pdfAutomations: typeof pdfAutomations;
+  util: typeof util;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

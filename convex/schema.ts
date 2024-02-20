@@ -4,6 +4,7 @@ import { v } from "convex/values";
 export default defineSchema({
   pdfautomations: defineTable({
     title: v.string(),
+    userId: v.string(),
     cssUrl: v.string(),
     htmlUrl: v.string(),
   }),

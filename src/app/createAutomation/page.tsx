@@ -81,8 +81,6 @@ export default function CreateAutomation() {
                         return;
                     }
 
-
-
                     const pdfAutomationId = await pdfAutomation({
                         htmlUrl: htmlFile,
                         cssUrl: cssFile,

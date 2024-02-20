@@ -21,12 +21,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
           <Providers>
-            <ConvexClientProvider>
+            {/* <ConvexClientProvider> */}
               <Header />
               <div className="container">
                 {children}
               </div>
-            </ConvexClientProvider>
+            {/* </ConvexClientProvider> */}
           </Providers>
         </body>
       </html>

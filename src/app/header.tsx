@@ -1,10 +1,13 @@
 "use client"
 
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useSession } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle"
 import Link from "next/link";
 
 export function Header() {
+    const { isLoading, isAuthenticated } = useSession();
+    
     return (
         <div className="border-b">
             <div className="h-16 container flex justify-between items-center">
